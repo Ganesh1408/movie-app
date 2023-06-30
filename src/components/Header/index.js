@@ -97,7 +97,7 @@ class Header extends Component {
               <button
                 type="button"
                 className="icon-button"
-                testid="searchButton"
+                data-testid="searchButton"
               >
                 <HiOutlineSearch
                   size={20}

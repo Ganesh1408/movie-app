@@ -48,7 +48,7 @@ class Popular extends Component {
         backdropPath: eachMovie.backdrop_path,
         overview: eachMovie.overview,
         id: eachMovie.id,
-        posterUrl: eachMovie.poster_path,
+        posterPath: eachMovie.poster_path,
       }))
       this.setState({
         popularData: updatedData,
@@ -73,7 +73,7 @@ class Popular extends Component {
               <li className="popular-li-item" key={each.id}>
                 <img
                   className="popular-poster"
-                  src={each.posterUrl}
+                  src={each.posterPath}
                   alt={each.title}
                 />
               </li>
@@ -93,7 +93,7 @@ class Popular extends Component {
   renderLoadingView = () => (
     <div className="loader-container">
       <Loader
-        testid="loader"
+        data-testid="loader"
         type="TailSpin"
         height={35}
         width={380}

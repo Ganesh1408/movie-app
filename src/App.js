@@ -5,7 +5,7 @@ import Popular from './components/Popular'
 import MovieDetailView from './components/MovieDetailView'
 import NotFound from './components/NotFound'
 import Account from './components/Account'
-import ProfilePage from './components/ProfilePage'
+// import ProfilePage from './components/ProfilePage'
 import ProtectedRoute from './components/ProtectedRoute'
 import SearchFilter from './components/SearchResults'
 import './App.css'
@@ -18,7 +18,7 @@ const App = () => (
     <ProtectedRoute exact path="/movies/:id" component={MovieDetailView} />
 
     <ProtectedRoute exact path="/account" component={Account} />
-    <ProtectedRoute exact path="/profilepage" component={ProfilePage} />
+
     <ProtectedRoute exact path="/search" component={SearchFilter} />
     <Route path="/not-found" component={NotFound} />
     <Redirect to="not-found" />

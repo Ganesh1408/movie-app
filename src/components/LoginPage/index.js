@@ -20,7 +20,7 @@ class LoginPage extends Component {
     Cookies.set('jwt_token', jwtToken, {
       expires: 30,
     })
-    history.replace('/profilepage')
+    history.replace('/')
     const {username, password} = this.state
     localStorage.setItem('username', username)
     localStorage.setItem('password', password)
@@ -98,7 +98,7 @@ class LoginPage extends Component {
     const {showError, errorMsg} = this.state
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
-      return <Redirect to="/profilepage" />
+      return <Redirect to="/" />
     }
     return (
       <div className="login-container">

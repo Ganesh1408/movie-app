@@ -114,7 +114,7 @@ class Home extends Component {
             flexDirection: 'column',
           }}
         >
-          <Header className="header-opacity" />
+          <Header />
           <div className=" home-header-content heading-container">
             <h1 className=" movie-details-name home-poster-title" key={title}>
               {title}
