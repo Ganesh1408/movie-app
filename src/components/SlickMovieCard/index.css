@@ -2,7 +2,7 @@
   margin: 0px 5px;
   height: 90px;
   width: 64px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .react-slick-li-item {
   padding: 0;
@@ -28,8 +28,8 @@
 @media (min-width: 567px) {
   .slick-movie-img {
     margin: 0px 5px;
-    height: 120px;
-    width: 120px;
+    height: 255px;
+    width: 170px;
   }
 }
 

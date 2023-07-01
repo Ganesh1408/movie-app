@@ -97,7 +97,7 @@ class Header extends Component {
               <button
                 type="button"
                 className="icon-button"
-                data-testid="searchButton"
+                testid="searchButton"
               >
                 <HiOutlineSearch
                   size={20}
@@ -107,7 +107,7 @@ class Header extends Component {
                 />
               </button>
             </Link>
-            <Link to="/Account">
+            <Link to="/account">
               <img
                 src="https://res.cloudinary.com/dyx9u0bif/image/upload/v1657426927/account-avatar_irmhck.png"
                 className={`profile-logo ${accountClassNameStyling}`}

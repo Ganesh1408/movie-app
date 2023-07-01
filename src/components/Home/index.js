@@ -2,6 +2,7 @@ import './index.css'
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
+import TopRated from '../TopRated'
 
 import TrendingMovies from '../TrendingNow'
 import Originals from '../Originals'
@@ -161,6 +162,12 @@ class Home extends Component {
             <h1 className="section-heading">Trending Now</h1>
             <div className="slick-container">
               <TrendingMovies />
+            </div>
+          </div>
+          <div className="main-container">
+            <h1 className="section-heading">Top Rated</h1>
+            <div className="slick-container">
+              <TopRated />
             </div>
           </div>
 
